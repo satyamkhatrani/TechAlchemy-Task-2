@@ -90,7 +90,6 @@ export const login = async (req, res) => {
     }
 
     userData.token = await getAccessToken(userData._id);
-    console.log("userData.token: ", userData.token);
 
     return handleResponse({
       res,
